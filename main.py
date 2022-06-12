@@ -54,6 +54,3 @@ async def predictd_image(info: Request):
     
     return {"class": class_name, "confidence": float(confidence)}
 
-
-if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8000)
